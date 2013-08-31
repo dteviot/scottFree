@@ -1,0 +1,34 @@
+		ScottFree Android Edition
+
+Requirements
+------------
+
+Andriod version 2.2 or above        
+While this will run on a cellphone, for best experience, it's best run
+on a 7 inch tablet or better.
+        
+Features
+------------
+        
+This program includes most of Scott Adams' Text Adventures.
+        
+
+Licenses
+--------
+
+The Java code of this program is derived from 
+		ScottFree J2ME Mobile Phone Edition
+			   1.18 Beta 1
+
+			   "The Count"
+
+which is licensed under the GNU Public License.
+
+Consequently, this Java code is also licensed under the GNU Public License.
+
+Note that the actual game data files found in the "assets" Directory are
+NOT licensed under the GNU Public license. They are still copyrighted
+by Scott Adams and are not Public Domain, but have been used with his permission.
+
+For more information on Scott Adams visit http://www.msadams.com
+

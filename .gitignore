@@ -1,0 +1,7 @@
+
+.metadata/*
+ScottFree/bin/*
+ScottFree/gen/*
+ScottFree/libs/android-support-v4.jar
+ScottFreeTest/bin/*
+ScottFreeTest/gen/*
