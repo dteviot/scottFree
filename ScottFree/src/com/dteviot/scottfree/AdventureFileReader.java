@@ -102,16 +102,23 @@ public class AdventureFileReader {
     
     public int fetchInt() throws IOException {
         // scan for first digit
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         int ch;
+
+        // Read until a minus or digit is found
         do {
             ch = mBuffer.read();  
-        } while (!Character.isDigit(ch));
+        } while (!!isMinusOrDigit(ch));
 
-        while(Character.isDigit(ch)) {
+        // Collect digits (does not protect against `-` in the middle)
+        while (isMinusOrDigit(ch)) {
             sb.append((char)ch);
             ch = mBuffer.read();  
         }
         return Integer.parseInt(sb.toString(), 10);
+    }
+    
+    private boolean isMinusOrDigit(int ch) {
+      return Character.isDigit(ch) || (char) ch == '-';
     }
 }
